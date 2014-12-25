@@ -20,9 +20,11 @@ namespace Array_in_C_sharp
         
         private void printPandavaNames()
         {
-            for(int i =0;i<pandavas.Length;i++)
+            int count = 0;
+            foreach(String name in pandavas)
             {
-                Console.WriteLine("Name "+i+": "+pandavas[i]);
+                count++;
+                Console.WriteLine("Name "+count+":"+name);
             }
         }
     }
